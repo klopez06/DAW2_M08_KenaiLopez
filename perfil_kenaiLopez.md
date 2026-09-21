@@ -4,8 +4,8 @@ Soy **Kenai**, un estudiante del ciclo superior **Desarrollo de Aplicaciones Web
 
 ### Lenguajes de programación
 1. JavaScript
-2. HTML
-3. CSS
+2. Python
+3. PHP
 4. Java
 
 ### 3 películas que me gustan
