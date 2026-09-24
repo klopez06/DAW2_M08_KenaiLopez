@@ -30,13 +30,12 @@ Soy **Kenai**, un estudiante del ciclo superior **Desarrollo de Aplicaciones Web
 La página web de un [proyecto de traducción fan](https://deltaesp.site) en el que participo.
 
 ### Tres tecnologías que me gustaría aprender (o seguir aprendiedo)
-```markdown
+
 |   Tecnología    | Nivel actual  |     Recurso               |
 |-----------------|---------------|---------------------------|
 | Godot Engine    | Bajo          | Godot Forum y tutoriales  |
 | Adobe Photoshop | Alto          | Tutoriales y experiencia  |
 | Adobe Premiere  | Alto          | Tutoriales y experiencia  |
-```
 
 ### Bloque de código
 ```python
