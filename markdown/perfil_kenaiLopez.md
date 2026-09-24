@@ -8,10 +8,18 @@ Soy **Kenai**, un estudiante del ciclo superior **Desarrollo de Aplicaciones Web
 3. PHP
 4. Java
 
-### 3 películas que me gustan
-1. 
-2. 
-3. 
+### Tres películas que me gustan
+1. Maquia
+2. Your Name
+3. Hogar a la deriva
+
+### Tres cantantes/grupos musicales
+- 
+-
+-
+
+### Web que me interesa
+La página web de un [proyecto de traducción fan](deltaesp.site) en el que participo.
 
 ## Checklist de la actividad
 - [X] Título
