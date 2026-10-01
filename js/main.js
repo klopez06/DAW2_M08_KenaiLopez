@@ -188,8 +188,4 @@
       }, 2000);
     });
   }
-
-  /* ---------- 6. Año del pie ---------- */
-  const year = document.getElementById("anio");
-  if (year) year.textContent = new Date().getFullYear();
 })();
