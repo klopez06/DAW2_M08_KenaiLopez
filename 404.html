@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 · Kenai López</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#2a1a12">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="page-404">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./" aria-label="Nombre Apellido, ir al inicio">K.L.</a>
+            <a class="btn btn-small" href="./">Volver al inicio</a>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero error-hero" aria-labelledby="titulo-error">
+            <div class="gears" aria-hidden="true">
+                <span class="gear gear-a" data-teeth="18" data-speed="0.12"></span>
+                <span class="gear gear-c" data-teeth="24" data-speed="0.08"></span>
+            </div>
+
+            <div class="container error-inner">
+                <!-- El cero es un engranaje que gira solo -->
+                <p class="error-code" role="img" aria-label="Error 404">
+                    <span aria-hidden="true">4</span>
+                    <span class="gear gear-zero" data-teeth="14" aria-hidden="true"></span>
+                    <span aria-hidden="true">4</span>
+                </p>
+
+                <h1 id="titulo-error">Esta página no existe</h1>
+                <p class="error-text">
+                    Has llegado a una dirección que no está en el taller: puede que el enlace esté mal escrito
+                    o que la página se haya movido. Vuelve al inicio o ve directamente a una sección.
+                </p>
+
+                <ul class="hero-links">
+                    <li><a class="btn btn-primary" href="./">Volver al inicio</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Hecho por Claude por petición de la actividad (HTML, CSS y JavaScript).</p>
+        </div>
+    </footer>
+</body>
+
+</html>
