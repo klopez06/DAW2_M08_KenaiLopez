@@ -66,22 +66,23 @@ body {
   background-color: var(--wood-dark);
   /* Veta de madera sutil */
   background-image:
-    repeating-linear-gradient(
-      90deg,
+    repeating-linear-gradient(90deg,
       rgba(255, 255, 255, 0.025) 0 2px,
       transparent 2px 9px,
       rgba(0, 0, 0, 0.12) 9px 11px,
-      transparent 11px 23px
-    ),
+      transparent 11px 23px),
     linear-gradient(180deg, var(--wood) 0%, var(--wood-dark) 100%);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 var(--space-2);
   line-height: 1.2;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-display);
   font-weight: 900;
   color: var(--brass-light);
@@ -95,21 +96,29 @@ h3 {
   letter-spacing: 0.02em;
 }
 
-p { margin: 0 0 var(--space-2); }
+p {
+  margin: 0 0 var(--space-2);
+}
 
 a {
   color: var(--brass-light);
   text-underline-offset: 0.2em;
 }
 
-a:hover { color: #fff1c9; }
+a:hover {
+  color: #fff1c9;
+}
 
 :focus-visible {
   outline: 3px solid var(--verdigris);
   outline-offset: 3px;
 }
 
-img { max-width: 100%; height: auto; display: block; }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* ---------- 3. Utilidades ---------- */
 .container {
@@ -141,7 +150,9 @@ img { max-width: 100%; height: auto; display: block; }
   transition: top 0.15s;
 }
 
-.skip-link:focus { top: 1rem; }
+.skip-link:focus {
+  top: 1rem;
+}
 
 /* ---------- 4. Cabecera y navegación ---------- */
 .site-header {
@@ -174,7 +185,10 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.brand:hover { color: var(--ink); filter: brightness(1.1); }
+.brand:hover {
+  color: var(--ink);
+  filter: brightness(1.1);
+}
 
 .nav-toggle {
   display: inline-flex;
@@ -199,15 +213,36 @@ img { max-width: 100%; height: auto; display: block; }
   transition: transform 0.2s, opacity 0.2s;
 }
 
-.nav-toggle-bars { position: relative; }
-.nav-toggle-bars::before,
-.nav-toggle-bars::after { content: ""; position: absolute; left: 0; }
-.nav-toggle-bars::before { top: -8px; }
-.nav-toggle-bars::after { top: 8px; }
+.nav-toggle-bars {
+  position: relative;
+}
 
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars { background: transparent; }
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before { transform: translateY(8px) rotate(45deg); }
-.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after { transform: translateY(-8px) rotate(-45deg); }
+.nav-toggle-bars::before,
+.nav-toggle-bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-bars::before {
+  top: -8px;
+}
+
+.nav-toggle-bars::after {
+  top: 8px;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 /* Móvil: menú desplegable */
 .site-nav {
@@ -220,7 +255,9 @@ img { max-width: 100%; height: auto; display: block; }
   display: none;
 }
 
-.site-nav.open { display: block; }
+.site-nav.open {
+  display: block;
+}
 
 .site-nav ul {
   list-style: none;
@@ -243,7 +280,10 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--brass-light);
 }
 
-.site-nav a[aria-current="true"] { border-bottom-style: solid; border-bottom-color: var(--brass-light); }
+.site-nav a[aria-current="true"] {
+  border-bottom-style: solid;
+  border-bottom-color: var(--brass-light);
+}
 
 /* ---------- 5. Presentación y engranajes ---------- */
 .hero {
@@ -308,7 +348,10 @@ img { max-width: 100%; height: auto; display: block; }
   transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.btn:hover { color: #fff1c9; transform: translateY(-1px); }
+.btn:hover {
+  color: #fff1c9;
+  transform: translateY(-1px);
+}
 
 .btn:active {
   transform: translateY(3px);
@@ -321,9 +364,15 @@ img { max-width: 100%; height: auto; display: block; }
   border-color: var(--brass-dark);
 }
 
-.btn-primary:hover { color: var(--ink); filter: brightness(1.08); }
+.btn-primary:hover {
+  color: var(--ink);
+  filter: brightness(1.08);
+}
 
-.btn-small { font-size: 0.95rem; padding: 0.35rem 0.9rem; }
+.btn-small {
+  font-size: 0.95rem;
+  padding: 0.35rem 0.9rem;
+}
 
 /* Retrato dentro de un ojo de buey de latón */
 .porthole {
@@ -351,7 +400,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Engranajes (los dibuja main.js; giran con el scroll) */
-.gears { position: absolute; inset: 0; pointer-events: none; }
+.gears {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
 
 .gear {
   position: absolute;
@@ -361,15 +414,46 @@ img { max-width: 100%; height: auto; display: block; }
   will-change: transform;
 }
 
-.gear svg { display: block; width: 100%; height: 100%; }
+.gear svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-.gear-a { width: 360px; height: 360px; right: -110px; top: -90px; opacity: 0.32; }
-.gear-b { width: 220px; height: 220px; right: 160px; top: 170px; opacity: 0.26; color: var(--copper); }
-.gear-c { width: 300px; height: 300px; left: -140px; bottom: -130px; opacity: 0.2; color: var(--verdigris); }
+.gear-a {
+  width: 360px;
+  height: 360px;
+  right: -110px;
+  top: -90px;
+  opacity: 0.32;
+}
+
+.gear-b {
+  width: 220px;
+  height: 220px;
+  right: 160px;
+  top: 170px;
+  opacity: 0.26;
+  color: var(--copper);
+}
+
+.gear-c {
+  width: 300px;
+  height: 300px;
+  left: -140px;
+  bottom: -130px;
+  opacity: 0.2;
+  color: var(--verdigris);
+}
 
 /* ---------- 6. Paneles y secciones ---------- */
-main > section:not(.hero) { padding-block: var(--space-5) 0; }
-main > section:last-of-type { padding-bottom: var(--space-5); }
+main>section:not(.hero) {
+  padding-block: var(--space-5) 0;
+}
+
+main>section:last-of-type {
+  padding-bottom: var(--space-5);
+}
 
 h2 {
   position: relative;
@@ -425,14 +509,34 @@ h2::after {
     radial-gradient(circle, #fbe9ad 0 28%, var(--brass-dark) 62%, transparent 66%) right 6px bottom 6px / 13px 13px no-repeat;
 }
 
-.panel h3 { color: var(--ink); }
-.panel a { color: #7a3a12; font-weight: normal; }
-.panel a:hover { color: #4a1f06; }
-.panel :focus-visible { outline-color: #2c5a4e; }
+.panel h3 {
+  color: var(--ink);
+}
 
-.prose { padding-inline: clamp(1.5rem, 5vw, 3rem); }
-.prose p { max-width: 68ch; }
-.prose p:last-child { margin-bottom: 0; }
+.panel a {
+  color: #7a3a12;
+  font-weight: normal;
+}
+
+.panel a:hover {
+  color: #4a1f06;
+}
+
+.panel :focus-visible {
+  outline-color: #2c5a4e;
+}
+
+.prose {
+  padding-inline: clamp(1.5rem, 5vw, 3rem);
+}
+
+.prose p {
+  max-width: 68ch;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
 
 /* ---------- 7. Competencias ---------- */
 .skills-grid {
@@ -455,10 +559,16 @@ h2::after {
   border-bottom: 1px dotted rgba(43, 29, 18, 0.45);
 }
 
-.skill-list li:last-child { border-bottom: 0; }
+.skill-list li:last-child {
+  border-bottom: 0;
+}
 
 /* Nivel: tres remaches; los rellenos indican el nivel */
-.level { display: inline-flex; gap: 6px; flex-shrink: 0; }
+.level {
+  display: inline-flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
 
 .level i {
   width: 14px;
@@ -492,7 +602,9 @@ h2::after {
   cursor: pointer;
 }
 
-.filter:hover { border-color: var(--brass-light); }
+.filter:hover {
+  border-color: var(--brass-light);
+}
 
 .filter[aria-pressed="true"] {
   color: var(--ink);
@@ -505,9 +617,18 @@ h2::after {
   gap: var(--space-3);
 }
 
-.project { display: flex; flex-direction: column; }
-.project[hidden] { display: none; }
-.project p { flex-grow: 0; }
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project[hidden] {
+  display: none;
+}
+
+.project p {
+  flex-grow: 0;
+}
 
 /* Marcador de imagen con aspecto de plano técnico */
 .blueprint {
@@ -585,7 +706,9 @@ h2::after {
   padding-bottom: var(--space-3);
 }
 
-.timeline li:last-child { padding-bottom: 0; }
+.timeline li:last-child {
+  padding-bottom: 0;
+}
 
 .timeline li::before {
   content: "";
@@ -605,7 +728,9 @@ h2::after {
   color: #7a3a12;
 }
 
-.subhead { margin-top: var(--space-3); }
+.subhead {
+  margin-top: var(--space-3);
+}
 
 .lang-list {
   list-style: none;
@@ -621,12 +746,25 @@ h2::after {
   border-bottom: 1px dotted rgba(43, 29, 18, 0.45);
 }
 
-.lang-list li:last-child { border-bottom: 0; }
-.lang-list span { font-style: italic; text-align: right; }
+.lang-list li:last-child {
+  border-bottom: 0;
+}
+
+.lang-list span {
+  font-style: italic;
+  text-align: right;
+}
 
 /* ---------- 10. Contacto y pie ---------- */
-.contact { text-align: center; padding-block: var(--space-4); }
-.contact p { margin-inline: auto; max-width: 52ch; }
+.contact {
+  text-align: center;
+  padding-block: var(--space-4);
+}
+
+.contact p {
+  margin-inline: auto;
+  max-width: 52ch;
+}
 
 .contact-mail {
   display: flex;
@@ -640,7 +778,9 @@ h2::after {
   overflow-wrap: anywhere;
 }
 
-.contact .hero-links { justify-content: center; }
+.contact .hero-links {
+  justify-content: center;
+}
 
 .site-footer {
   padding-block: var(--space-3);
@@ -650,18 +790,32 @@ h2::after {
   border-top: 4px solid var(--brass-dark);
 }
 
-.site-footer p { margin: 0.2rem 0; }
+.site-footer p {
+  margin: 0.2rem 0;
+}
 
 /* ---------- 11. Responsive ---------- */
 @media (min-width: 700px) {
-  .skills-grid { grid-template-columns: repeat(2, 1fr); }
-  .projects-grid { grid-template-columns: repeat(2, 1fr); }
-  .path-grid { grid-template-columns: repeat(2, 1fr); align-items: start; }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .path-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
 }
 
 @media (min-width: 900px) {
+
   /* Navegación horizontal */
-  .nav-toggle { display: none; }
+  .nav-toggle {
+    display: none;
+  }
 
   .site-nav {
     position: static;
@@ -670,19 +824,118 @@ h2::after {
     border: 0;
   }
 
-  .site-nav ul { display: flex; gap: var(--space-3); padding: 0; }
+  .site-nav ul {
+    display: flex;
+    gap: var(--space-3);
+    padding: 0;
+  }
 
-  .site-nav a { padding: 0.3rem 0.1rem; border-bottom: 2px solid transparent; }
+  .site-nav a {
+    padding: 0.3rem 0.1rem;
+    border-bottom: 2px solid transparent;
+  }
 
-  .hero-inner { grid-template-columns: 1.4fr 1fr; }
-  .porthole { width: min(100%, 340px); }
+  .hero-inner {
+    grid-template-columns: 1.4fr 1fr;
+  }
 
-  .skills-grid { grid-template-columns: repeat(3, 1fr); }
-  .projects-grid { grid-template-columns: repeat(3, 1fr); }
+  .porthole {
+    width: min(100%, 340px);
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- 11b. Página 404 ---------- */
+.page-404 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.page-404 main {
+  flex: 1;
+  display: flex;
+}
+
+.error-hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 0;
+}
+
+.error-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 4 + engranaje + 4 */
+.error-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.2rem, 2vw, 1rem);
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(5.5rem, 26vw, 11rem);
+  line-height: 1;
+  color: var(--brass-light);
+  text-shadow: 0 4px 0 var(--brass-dark), 0 10px 22px rgba(0, 0, 0, 0.6);
+}
+
+/* El engranaje del cero: gira solo, no con el scroll */
+.gear.gear-zero {
+  position: static;
+  width: 0.82em;
+  height: 0.82em;
+  color: var(--brass);
+  filter: drop-shadow(0 4px 0 var(--brass-dark)) drop-shadow(0 10px 14px rgba(0, 0, 0, 0.55));
+  animation: gear-spin 14s linear infinite;
+}
+
+@keyframes gear-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-inner h1 {
+  font-size: clamp(1.7rem, 6vw, 2.8rem);
+}
+
+.error-text {
+  max-width: 52ch;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.error-inner .hero-links {
+  justify-content: center;
 }
 
 /* ---------- 12. Preferencias de usuario ---------- */
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { transition: none !important; }
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+  .gear.gear-zero {
+    animation: none;
+  }
 }
